@@ -219,24 +219,26 @@ export default function LoadingScreen({
             aria-hidden
           >
             <path
-              d="M8 36C14 22 22 14 28 14C34 14 42 22 48 36"
-              stroke="currentColor"
-              strokeWidth="2.5"
+              d="M10 42L28 14L46 42"
+              stroke="#8581BD"
+              strokeWidth="3"
               strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
-              d="M12 40C17 30 23 24 28 24C33 24 39 30 44 40"
+              d="M18 30L28 42L38 30"
               stroke="#b4b0d9"
               strokeWidth="2.5"
               strokeLinecap="round"
+              strokeLinejoin="round"
             />
-            <circle cx="28" cy="42" r="3" fill="#000000" />
+            <circle cx="28" cy="24" r="3.5" fill="#8581BD" />
           </svg>
-          <p className="font-display text-2xl tracking-tight sm:text-3xl">
-            Bizwave
+          <p className="font-display text-2xl tracking-tight sm:text-3xl text-white">
+            Markslink
           </p>
-          <p className="text-[10px] uppercase tracking-[0.28em] opacity-70">
-            Consultancy
+          <p className="text-[10px] uppercase tracking-[0.32em] text-[var(--mist)]">
+            Enterprise Solutions
           </p>
         </div>
 

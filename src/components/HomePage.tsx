@@ -5,9 +5,14 @@ import LoadingScreen from "@/components/LoadingScreen";
 import Navigation from "@/components/Navigation";
 import SmoothScroll from "@/components/SmoothScroll";
 import Hero from "@/components/sections/Hero";
+import TechStack from "@/components/sections/TechStack";
 import Services from "@/components/sections/Services";
+import WhyChooseUs from "@/components/sections/WhyChooseUs";
+import Industries from "@/components/sections/Industries";
 import About from "@/components/sections/About";
-import CaseStudies from "@/components/sections/CaseStudies";
+import Testimonials from "@/components/sections/Testimonials";
+import FAQ from "@/components/sections/FAQ";
+import CTABanner from "@/components/sections/CTABanner";
 import Contact from "@/components/sections/Contact";
 
 export default function HomePage() {
@@ -35,9 +40,14 @@ export default function HomePage() {
           <Navigation />
           <main>
             <Hero ready={ready} />
+            <TechStack />
             <Services />
+            <WhyChooseUs />
+            <Industries />
             <About />
-            <CaseStudies />
+            <Testimonials />
+            <FAQ />
+            <CTABanner />
             <Contact />
           </main>
         </div>

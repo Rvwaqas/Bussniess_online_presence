@@ -110,3 +110,43 @@ html.lenis body {
 .shape-overlays__path {
   will-change: d;
 }
+
+/* Infinite Marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Tech card glass glow */
+.tech-glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-glass-card:hover {
+  border-color: rgba(133, 129, 189, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -12px rgba(133, 129, 189, 0.15);
+}
+
+.tech-grid-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
