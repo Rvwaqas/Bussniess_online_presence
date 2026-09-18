@@ -3,7 +3,7 @@
 import { useMemo, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
-import { useIsMobile, usePrefersReducedMotion } from "@/hooks/useMediaQuery";
+import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 
 function ParticleMesh({ count }: { count: number }) {
   const pointsRef = useRef<THREE.Points>(null);
@@ -68,10 +68,10 @@ function ParticleMesh({ count }: { count: number }) {
           />
         </bufferGeometry>
         <pointsMaterial
-          size={0.035}
-          color="#8581BD"
+          size={0.055}
+          color="#a78bfa"
           transparent
-          opacity={0.8}
+          opacity={0.9}
           sizeAttenuation
           depthWrite={false}
         />
@@ -84,9 +84,9 @@ function ParticleMesh({ count }: { count: number }) {
           />
         </bufferGeometry>
         <lineBasicMaterial
-          color="#454270"
+          color="#8581BD"
           transparent
-          opacity={0.28}
+          opacity={0.45}
           depthWrite={false}
         />
       </lineSegments>
@@ -95,31 +95,30 @@ function ParticleMesh({ count }: { count: number }) {
 }
 
 export default function ParticleField() {
-  const isMobile = useIsMobile();
   const prefersReduced = usePrefersReducedMotion();
 
-  if (prefersReduced || isMobile) {
+  if (prefersReduced) {
     return (
       <div
-        className="pointer-events-none absolute inset-0 opacity-40"
+        className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 60% 40%, rgba(133,129,189,0.22), transparent 70%), radial-gradient(ellipse 50% 40% at 20% 70%, rgba(69,66,112,0.2), transparent)",
+            "radial-gradient(ellipse 80% 60% at 60% 40%, rgba(133,129,189,0.3), transparent 70%), radial-gradient(ellipse 50% 40% at 20% 70%, rgba(69,66,112,0.3), transparent)",
         }}
       />
     );
   }
 
   return (
-    <div className="pointer-events-none absolute inset-0 will-change-transform">
+    <div className="pointer-events-none absolute inset-0 z-0">
       <Canvas
-        dpr={[1, 1.5]}
+        dpr={[1, 2]}
         camera={{ position: [0, 0, 7], fov: 50 }}
-        gl={{ antialias: false, alpha: true, powerPreference: "high-performance" }}
+        gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
         style={{ width: "100%", height: "100%" }}
       >
-        <ParticleMesh count={90} />
+        <ParticleMesh count={120} />
       </Canvas>
     </div>
   );

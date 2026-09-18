@@ -15,9 +15,27 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Bizwave Consultancy — Software Development Agency",
+  title: "Markslink Solutions — Enterprise Software & IT Consulting",
   description:
-    "Bizwave Consultancy builds ERP systems, CRM solutions, booking platforms, real estate apps, and mobile products for ambitious companies.",
+    "Markslink Solutions architects custom ERPs, AI-driven automation, high-scale cloud platforms, and mobile apps for ambitious enterprises worldwide.",
+  keywords: [
+    "Enterprise Software",
+    "IT Solutions",
+    "Custom ERP",
+    "CRM Systems",
+    "Cloud Architecture",
+    "DevOps",
+    "AI Automation",
+    "Mobile App Development",
+    "Markslink Solutions",
+  ],
+  authors: [{ name: "Markslink Solutions" }],
+  openGraph: {
+    title: "Markslink Solutions — Enterprise Software & IT Consulting",
+    description:
+      "Engineering Next-Generation Software & Intelligent IT Infrastructure.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

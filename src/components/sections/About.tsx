@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import { gsap, registerGSAP } from "@/lib/gsap";
 import { useIsMobile, usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 
+import Image from "next/image";
+
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null);
   const imageWrapRef = useRef<HTMLDivElement>(null);
@@ -19,9 +21,9 @@ export default function About() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         imageRef.current,
-        { yPercent: -12, scale: 1.12 },
+        { yPercent: -10, scale: 1.08 },
         {
-          yPercent: 12,
+          yPercent: 10,
           scale: 1,
           ease: "none",
           scrollTrigger: {
@@ -60,55 +62,89 @@ export default function About() {
       ref={sectionRef}
       className="relative overflow-hidden bg-[var(--ink)] py-24 sm:py-32"
     >
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
         <div
           ref={imageWrapRef}
-          className="relative aspect-[4/5] overflow-hidden sm:aspect-[5/6]"
+          className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/15 bg-black shadow-2xl sm:aspect-[5/6]"
         >
           <div
             ref={imageRef}
-            className="absolute inset-[-12%] will-change-transform"
-            style={{
-              backgroundImage: `
-                linear-gradient(160deg, rgba(133,129,189,0.4), rgba(0,0,0,0.55)),
-                url("data:image/svg+xml,%3Csvg viewBox='0 0 400 500' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23454270'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g)' width='400' height='500'/%3E%3Cpath d='M0 320 Q100 260 200 320 T400 300 V500 H0Z' fill='%238581BD' opacity='0.35'/%3E%3Cpath d='M0 360 Q120 300 240 360 T400 340 V500 H0Z' fill='%23b4b0d9' opacity='0.2'/%3E%3Ccircle cx='300' cy='120' r='60' fill='%238581BD' opacity='0.45'/%3E%3C/svg%3E")
-              `,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            aria-hidden
-          />
-          <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
+            className="absolute inset-[-10%] will-change-transform"
+          >
+            <Image
+              src="/images/about/engineering-team.jpg"
+              alt="Markslink Solutions Software Engineering Lab"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)] via-[var(--ink)]/30 to-transparent" />
+          </div>
+
+          {/* Floating Experience Badge */}
+          <div className="absolute bottom-6 left-6 right-6 rounded-xl border border-white/15 bg-black/75 p-5 backdrop-blur-md">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--primary)] text-black font-bold font-display text-lg">
+                ML
+              </div>
+              <div>
+                <p className="font-display text-sm font-bold text-white">
+                  Markslink Engineering Labs
+                </p>
+                <p className="text-xs text-[var(--mist)]">
+                  Architecting resilient digital systems since 2014
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="about-copy">
-          <p className="mb-3 text-xs uppercase tracking-[0.28em] text-[var(--tide)]">
-            About Bizwave
-          </p>
-          <h2 className="font-display text-4xl tracking-tight text-[var(--foam)] sm:text-5xl">
-            We build the systems behind growing companies
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--primary)] mb-4">
+            <span>About Markslink Solutions</span>
+          </div>
+
+          <h2 className="font-display text-4xl font-bold tracking-tight text-[var(--foam)] sm:text-5xl">
+            We Engineer the Software Powering High-Growth Enterprises
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[var(--mist)]">
-            Founded as a product-minded consultancy, Bizwave partners with
-            operators who need software that scales with ambition — not
-            slideshows of features that never ship.
+
+          <p className="mt-6 text-base leading-relaxed text-[var(--mist)] sm:text-lg">
+            Markslink Solutions is a premier technology consulting firm specializing in mission-critical software engineering, custom enterprise ERP platforms, AI workflow automation, and scalable cloud infrastructure.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-[var(--mist)]">
-            From discovery workshops to production releases, our teams stay
-            close to the problem: clearer workflows, fewer handoffs, and
-            interfaces your people will actually use.
+
+          <p className="mt-4 text-sm sm:text-base leading-relaxed text-[var(--mist)]">
+            We bridge the gap between complex business challenges and elegant, high-throughput software architecture. Our engineering teams eliminate handoff delays, deliver transparent sprints, and ensure zero bloat in every line of code we ship.
           </p>
-          <dl className="mt-10 grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
+
+          <div className="mt-8 space-y-3">
             {[
-              { value: "80+", label: "Projects" },
-              { value: "12", label: "Years" },
-              { value: "98%", label: "Retention" },
+              "End-to-End Enterprise Architecture from DB Design to Multi-Region Cloud",
+              "Direct Collaboration with Principal Software Architects — No Middlemen",
+              "Production-Grade Security, High-Availability SLAs, & SOC2 Compliance",
+            ].map((point, idx) => (
+              <div key={idx} className="flex items-start gap-3 text-sm text-[var(--foam)]">
+                <div className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/20 text-[var(--primary)]">
+                  <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>{point}</span>
+              </div>
+            ))}
+          </div>
+
+          <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-white/10 pt-8 sm:grid-cols-4">
+            {[
+              { value: "120+", label: "IT Deployments" },
+              { value: "99.9%", label: "Uptime SLA" },
+              { value: "10+", label: "Years Exp." },
+              { value: "98%", label: "Client Retention" },
             ].map((stat) => (
               <div key={stat.label}>
-                <dt className="font-display text-2xl text-[var(--foam)] sm:text-3xl">
+                <dt className="font-display text-2xl font-bold text-[var(--primary)] sm:text-3xl">
                   {stat.value}
                 </dt>
-                <dd className="mt-1 text-xs uppercase tracking-[0.18em] text-[var(--mist)]">
+                <dd className="mt-1 text-[11px] uppercase tracking-wider text-[var(--mist)]">
                   {stat.label}
                 </dd>
               </div>
