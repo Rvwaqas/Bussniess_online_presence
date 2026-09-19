@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 import SmoothScroll from "@/components/SmoothScroll";
 import Hero from "@/components/sections/Hero";
 import TechStack from "@/components/sections/TechStack";
+import AntigravitySection from "@/components/sections/AntigravitySection";
 import Services from "@/components/sections/Services";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Industries from "@/components/sections/Industries";
@@ -41,6 +42,7 @@ export default function HomePage() {
           <main>
             <Hero ready={ready} />
             <TechStack />
+            <AntigravitySection />
             <Services />
             <WhyChooseUs />
             <Industries />
