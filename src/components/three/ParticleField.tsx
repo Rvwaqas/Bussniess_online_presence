@@ -5,9 +5,10 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
 
-function ParticleMesh({ count }: { count: number }) {
+function AntigravityParticleMesh({ count }: { count: number }) {
   const pointsRef = useRef<THREE.Points>(null);
   const linesRef = useRef<THREE.LineSegments>(null);
+  const groupRef = useRef<THREE.Group>(null);
 
   const { positions, linePositions } = useMemo(() => {
     const pos = new Float32Array(count * 3);
@@ -15,16 +16,16 @@ function ParticleMesh({ count }: { count: number }) {
     const pts: THREE.Vector3[] = [];
 
     for (let i = 0; i < count; i++) {
-      const x = (Math.random() - 0.5) * 14;
-      const y = (Math.random() - 0.5) * 8;
-      const z = (Math.random() - 0.5) * 8;
+      const x = (Math.random() - 0.5) * 16;
+      const y = (Math.random() - 0.5) * 10;
+      const z = (Math.random() - 0.5) * 9;
       pos[i * 3] = x;
       pos[i * 3 + 1] = y;
       pos[i * 3 + 2] = z;
       pts.push(new THREE.Vector3(x, y, z));
     }
 
-    const maxDist = 2.4;
+    const maxDist = 2.6;
     for (let i = 0; i < count; i++) {
       for (let j = i + 1; j < count; j++) {
         if (pts[i].distanceTo(pts[j]) < maxDist) {
@@ -46,20 +47,36 @@ function ParticleMesh({ count }: { count: number }) {
     };
   }, [count]);
 
-  useFrame(({ clock }) => {
-    const t = clock.getElapsedTime() * 0.08;
-    if (pointsRef.current) {
-      pointsRef.current.rotation.y = t;
-      pointsRef.current.rotation.x = Math.sin(t * 0.4) * 0.08;
-    }
-    if (linesRef.current) {
-      linesRef.current.rotation.y = t;
-      linesRef.current.rotation.x = Math.sin(t * 0.4) * 0.08;
+  useFrame(({ clock, pointer }) => {
+    const t = clock.getElapsedTime() * 0.09;
+    
+    // Smooth mouse-reactive anti-gravity drift
+    if (groupRef.current) {
+      groupRef.current.rotation.y = THREE.MathUtils.lerp(
+        groupRef.current.rotation.y,
+        pointer.x * 0.35 + t * 0.5,
+        0.05
+      );
+      groupRef.current.rotation.x = THREE.MathUtils.lerp(
+        groupRef.current.rotation.x,
+        -pointer.y * 0.35 + Math.sin(t * 0.5) * 0.1,
+        0.05
+      );
+      groupRef.current.position.x = THREE.MathUtils.lerp(
+        groupRef.current.position.x,
+        pointer.x * 0.5,
+        0.04
+      );
+      groupRef.current.position.y = THREE.MathUtils.lerp(
+        groupRef.current.position.y,
+        pointer.y * 0.4,
+        0.04
+      );
     }
   });
 
   return (
-    <group>
+    <group ref={groupRef}>
       <points ref={pointsRef}>
         <bufferGeometry>
           <bufferAttribute
@@ -68,10 +85,10 @@ function ParticleMesh({ count }: { count: number }) {
           />
         </bufferGeometry>
         <pointsMaterial
-          size={0.055}
-          color="#a78bfa"
+          size={0.065}
+          color="#A79DFA"
           transparent
-          opacity={0.9}
+          opacity={0.95}
           sizeAttenuation
           depthWrite={false}
         />
@@ -86,7 +103,7 @@ function ParticleMesh({ count }: { count: number }) {
         <lineBasicMaterial
           color="#8581BD"
           transparent
-          opacity={0.45}
+          opacity={0.5}
           depthWrite={false}
         />
       </lineSegments>
@@ -114,11 +131,11 @@ export default function ParticleField() {
     <div className="pointer-events-none absolute inset-0 z-0">
       <Canvas
         dpr={[1, 2]}
-        camera={{ position: [0, 0, 7], fov: 50 }}
+        camera={{ position: [0, 0, 7.5], fov: 50 }}
         gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
         style={{ width: "100%", height: "100%" }}
       >
-        <ParticleMesh count={120} />
+        <AntigravityParticleMesh count={140} />
       </Canvas>
     </div>
   );
