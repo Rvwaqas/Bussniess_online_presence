@@ -159,11 +159,11 @@ const SEARCH_DATABASE: SearchItem[] = [
   // Pages
   {
     id: "page-home",
-    title: "Home — Markslink Solutions",
+    title: "Home — Jawa Solutions",
     category: "Pages",
     description: "Main portal, technology stack showcase, enterprise solutions overview, and client validation.",
     href: "/",
-    tags: ["Home", "Main", "Markslink", "Overview"],
+    tags: ["Home", "Main", "Jawa", "Overview"],
   },
   {
     id: "page-services",
@@ -509,7 +509,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
             </span>
           </div>
           <span className="text-[10px] uppercase tracking-wider text-[var(--primary)] font-semibold">
-            Markslink Quick Search
+            Jawa Quick Search
           </span>
         </div>
       </div>

@@ -180,7 +180,7 @@ export default function AgentTerminal() {
           <div className="h-3 w-3 rounded-full bg-emerald-500/80 border border-emerald-400/40" />
           <span className="ml-2 font-mono text-[11px] text-[var(--mist)] flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--primary)] animate-ping" />
-            markslink-antigravity-engine v2.6.4
+            jawa-antigravity-engine v2.6.4
           </span>
         </div>
 

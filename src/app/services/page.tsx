@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Enterprise Services & Engineering — Markslink Solutions",
+  title: "Enterprise Services & Engineering — Jawa Solutions",
   description:
     "Comprehensive enterprise software engineering: Custom ERPs, Cloud Architecture, AI Automation, Mobile Platforms, Cybersecurity, and Legacy Modernization.",
 };
@@ -351,7 +351,7 @@ export default function ServicesPage() {
               Quality Standards
             </span>
             <h2 className="mt-3 font-display text-3xl sm:text-5xl font-bold tracking-tight text-white">
-              The Markslink Delivery Lifecycle
+              The Jawa Delivery Lifecycle
             </h2>
             <p className="mt-4 text-sm text-[var(--mist)] leading-relaxed">
               Every project follows our battle-tested engineering framework designed to eliminate technical risk and ensure on-time delivery.

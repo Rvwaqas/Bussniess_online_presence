@@ -147,7 +147,7 @@ export default function CaseStudies() {
             </h2>
           </div>
           <p className="max-w-md text-sm text-[var(--slate)]">
-            Explore how Markslink Solutions architects resilient, high-volume IT platforms for market leaders.
+            Explore how Jawa Solutions architects resilient, high-volume IT platforms for market leaders.
           </p>
         </div>
       </div>

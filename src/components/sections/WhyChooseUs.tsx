@@ -127,7 +127,7 @@ export default function WhyChooseUs() {
         {/* Section Header (Light Theme) */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <div className="mb-4 inline-flex items-center rounded-full border border-[#8581BD]/30 bg-[#8581BD]/15 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.22em] text-[#454270]">
-            <span>The Markslink Advantage</span>
+            <span>The Jawa Advantage</span>
           </div>
 
           <h2 className="font-display text-4xl font-bold tracking-tight text-[#0E0D17] sm:text-5xl lg:text-[3.25rem]">
@@ -227,7 +227,7 @@ export default function WhyChooseUs() {
 
               <div className="mt-8 flex items-center justify-between border-t border-[#DDDCE8] pt-4">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#5C5878]">
-                  Markslink Quality SLA
+                  Jawa Quality SLA
                 </span>
                 <span className="text-xs font-semibold text-[#454270] transition-transform group-hover:translate-x-1">
                   Guaranteed Standard &rarr;

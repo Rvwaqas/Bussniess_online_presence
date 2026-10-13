@@ -5,9 +5,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "About Us — Markslink Solutions",
+  title: "About Us — Jawa Solutions",
   description:
-    "Learn about Markslink Solutions: Our engineering culture, leadership team, architectural principles, and track record delivering mission-critical enterprise systems.",
+    "Learn about Jawa Solutions: Our engineering culture, leadership team, architectural principles, and track record delivering mission-critical enterprise systems.",
 };
 
 const values = [
@@ -40,7 +40,7 @@ const leadership = [
     name: "Dr. Evelyn Vance",
     role: "Head of Artificial Intelligence & ML",
     specialty: "Vector Search & Autonomous Agents",
-    bio: "Ph.D. in Computer Science with a focus on neural retrieval systems. Leading Markslink's enterprise LLM orchestration and private data pipelines.",
+    bio: "Ph.D. in Computer Science with a focus on neural retrieval systems. Leading Jawa's enterprise LLM orchestration and private data pipelines.",
   },
   {
     name: "Marcus Sterling",
@@ -60,7 +60,7 @@ const timeline = [
   {
     year: "2018",
     title: "Founding & Distributed Systems Boutique",
-    desc: "Markslink Solutions was established with a focused mission: building high-performance backend engines and database architectures for high-growth tech companies.",
+    desc: "Jawa Solutions was established with a focused mission: building high-performance backend engines and database architectures for high-growth tech companies.",
   },
   {
     year: "2020",
@@ -101,7 +101,7 @@ export default function AboutPage() {
 
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8 text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--primary)] mb-6">
-            <span>About Markslink Solutions</span>
+            <span>About Jawa Solutions</span>
           </div>
 
           <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white max-w-4xl mx-auto leading-[1.1]">
@@ -145,7 +145,7 @@ export default function AboutPage() {
                 Built on Engineering Rigor, Not Fluff
               </h2>
               <p className="mt-6 text-sm sm:text-base leading-relaxed text-[var(--mist)]">
-                Markslink Solutions was founded by engineers who grew frustrated with traditional IT outsourcing agencies that prioritized billable hours over code quality and left clients with unmaintainable spaghetti code.
+                Jawa Solutions was founded by engineers who grew frustrated with traditional IT outsourcing agencies that prioritized billable hours over code quality and left clients with unmaintainable spaghetti code.
               </p>
               <p className="mt-4 text-sm sm:text-base leading-relaxed text-[var(--mist)]">
                 We inverted that model. We operate as an elite extension of your internal engineering leadership, bringing principal architects who write production code alongside your teams, adhere to clean architecture patterns, and document every endpoint thoroughly.
@@ -172,7 +172,7 @@ export default function AboutPage() {
               <div className="relative h-72 sm:h-96 w-full overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/about/engineering-team.jpg"
-                  alt="Markslink Engineering Team"
+                  alt="Jawa Engineering Team"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -181,7 +181,7 @@ export default function AboutPage() {
               <div className="relative h-72 sm:h-96 w-full overflow-hidden rounded-2xl border border-white/10 mt-8 sm:mt-12">
                 <Image
                   src="/images/about/office-architecture.jpg"
-                  alt="Markslink Architecture Studio"
+                  alt="Jawa Architecture Studio"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -308,7 +308,7 @@ export default function AboutPage() {
             Partner With Senior Architects
           </h2>
           <p className="mt-4 text-sm sm:text-base text-[var(--mist)]">
-            Explore how Markslink Solutions can modernize your systems and accelerate your engineering roadmap.
+            Explore how Jawa Solutions can modernize your systems and accelerate your engineering roadmap.
           </p>
           <div className="mt-8">
             <Link

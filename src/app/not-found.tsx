@@ -16,7 +16,7 @@ export default function NotFound() {
         href="/"
         className="mt-8 inline-flex items-center gap-2 rounded-lg bg-[var(--primary)] px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-black transition-transform hover:scale-105"
       >
-        <span>&larr; Return to Markslink Solutions</span>
+        <span>&larr; Return to Jawa Solutions</span>
       </Link>
     </div>
   );

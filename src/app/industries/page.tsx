@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Industry Solutions — Markslink Solutions",
+  title: "Industry Solutions — Jawa Solutions",
   description:
     "Domain-specialized software engineering and IT infrastructure for Healthcare, FinTech, Logistics, Manufacturing, Retail, and Energy sectors.",
 };

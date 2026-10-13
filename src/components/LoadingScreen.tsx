@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { gsap, registerGSAP } from "@/lib/gsap";
 
 type LoadingScreenProps = {
@@ -209,36 +210,23 @@ export default function LoadingScreen({
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white">
         <div
           ref={logoRef}
-          className="will-change-transform flex flex-col items-center gap-2"
+          className="will-change-transform flex flex-col items-center gap-3"
         >
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 56 56"
-            fill="none"
-            aria-hidden
-          >
-            <path
-              d="M10 42L28 14L46 42"
-              stroke="#8581BD"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          <div className="relative h-16 w-16 overflow-hidden rounded-2xl border border-white/20 bg-white shadow-xl">
+            <Image
+              src="/images/jawa.jpeg"
+              alt="Jawa Logo"
+              width={64}
+              height={64}
+              className="h-full w-full object-cover"
+              priority
             />
-            <path
-              d="M18 30L28 42L38 30"
-              stroke="#b4b0d9"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <circle cx="28" cy="24" r="3.5" fill="#8581BD" />
-          </svg>
+          </div>
           <p className="font-display text-2xl tracking-tight sm:text-3xl text-white">
-            Markslink
+            Jawa
           </p>
           <p className="text-[10px] uppercase tracking-[0.32em] text-[var(--mist)]">
-            Enterprise Solutions
+            IT Agency Services
           </p>
         </div>
 

@@ -73,7 +73,7 @@ export default function About() {
           >
             <Image
               src="/images/about/engineering-team.jpg"
-              alt="Markslink Solutions Software Engineering Lab"
+              alt="Jawa Solutions Software Engineering Lab"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover object-center"
@@ -84,12 +84,12 @@ export default function About() {
           {/* Floating Experience Badge */}
           <div className="absolute bottom-6 left-6 right-6 rounded-xl border border-white/15 bg-black/75 p-5 backdrop-blur-md">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--primary)] text-black font-bold font-display text-lg">
-                ML
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--primary)] text-black font-bold font-display text-sm">
+                JAWA
               </div>
               <div>
                 <p className="font-display text-sm font-bold text-white">
-                  Markslink Engineering Labs
+                  Jawa Engineering Labs
                 </p>
                 <p className="text-xs text-[var(--mist)]">
                   Architecting resilient digital systems since 2014
@@ -101,7 +101,7 @@ export default function About() {
 
         <div className="about-copy">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--primary)] mb-4">
-            <span>About Markslink Solutions</span>
+            <span>About Jawa Solutions</span>
           </div>
 
           <h2 className="font-display text-4xl font-bold tracking-tight text-[var(--foam)] sm:text-5xl">
@@ -109,7 +109,7 @@ export default function About() {
           </h2>
 
           <p className="mt-6 text-base leading-relaxed text-[var(--mist)] sm:text-lg">
-            Markslink Solutions is a premier technology consulting firm specializing in mission-critical software engineering, custom enterprise ERP platforms, AI workflow automation, and scalable cloud infrastructure.
+            Jawa Solutions is a premier technology consulting firm specializing in mission-critical software engineering, custom enterprise ERP platforms, AI workflow automation, and scalable cloud infrastructure.
           </p>
 
           <p className="mt-4 text-sm sm:text-base leading-relaxed text-[var(--mist)]">

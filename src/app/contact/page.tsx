@@ -33,28 +33,28 @@ const offices = [
     region: "Americas Hub",
     address: "One World Trade Center, Suite 8500",
     timezone: "UTC-5 (EST)",
-    email: "ny@markslinksolutions.com",
+    email: "rvwaqas602@gmail.com",
   },
   {
     city: "London",
     region: "EMEA Headquarters",
     address: "30 St Mary Axe, City of London",
     timezone: "UTC+0 (GMT)",
-    email: "london@markslinksolutions.com",
+    email: "rvwaqas602@gmail.com",
   },
   {
     city: "Dubai",
     region: "MENA Innovation Hub",
     address: "DIFC Gate Precinct 4, Level 5",
     timezone: "UTC+4 (GST)",
-    email: "dubai@markslinksolutions.com",
+    email: "rvwaqas602@gmail.com",
   },
   {
     city: "Singapore",
     region: "APAC Operations",
     address: "Marina Bay Financial Centre, Tower 2",
     timezone: "UTC+8 (SGT)",
-    email: "sg@markslinksolutions.com",
+    email: "rvwaqas602@gmail.com",
   },
 ];
 
@@ -198,12 +198,22 @@ export default function ContactPage() {
                 </h3>
                 <div className="space-y-3 text-xs text-[var(--mist)]">
                   <div>
-                    <span className="text-[var(--foam)] font-medium block">Executive Desk:</span>
-                    <span>contact@markslinksolutions.com</span>
+                    <span className="text-[var(--foam)] font-medium block">Executive Desk & Email:</span>
+                    <a href="mailto:rvwaqas602@gmail.com" className="hover:text-[var(--primary)] transition-colors">
+                      rvwaqas602@gmail.com
+                    </a>
+                  </div>
+                  <div>
+                    <span className="text-[var(--foam)] font-medium block">Direct Phone & WhatsApp:</span>
+                    <a href="tel:+923480227414" className="hover:text-[var(--primary)] transition-colors">
+                      +92 348 0227414
+                    </a>
                   </div>
                   <div>
                     <span className="text-[var(--foam)] font-medium block">Emergency SRE Hotline:</span>
-                    <span>ops@markslinksolutions.com</span>
+                    <a href="tel:+923480227414" className="hover:text-[var(--primary)] transition-colors">
+                      +923480227414
+                    </a>
                   </div>
                   <div>
                     <span className="text-[var(--foam)] font-medium block">Global Hours:</span>
@@ -237,7 +247,7 @@ export default function ContactPage() {
                       Project Brief Received
                     </h3>
                     <p className="mt-3 max-w-md mx-auto text-xs sm:text-sm text-[var(--mist)] leading-relaxed">
-                      Thank you for reaching out to Markslink Solutions. A principal solutions architect is reviewing your specifications and will respond within 24 hours under mutual NDA.
+                      Thank you for reaching out to Jawa Solutions. A principal solutions architect is reviewing your specifications and will respond within 24 hours under mutual NDA.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}

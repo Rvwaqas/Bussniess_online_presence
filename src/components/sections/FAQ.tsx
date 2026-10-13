@@ -20,7 +20,7 @@ const faqs = [
     a: "We adhere to enterprise security standards including SOC2 readiness, HIPAA compliance for healthcare data, and GDPR principles. All architectures feature automated role-based access control (RBAC), end-to-end data encryption, and vulnerability testing.",
   },
   {
-    q: "Can Markslink integrate with our existing legacy systems or in-house developers?",
+    q: "Can Jawa integrate with our existing legacy systems or in-house developers?",
     a: "Yes. Our senior architects specialize in bridging modern cloud architectures with legacy mainframes, SQL databases, and third-party APIs. We work seamlessly alongside your internal developers or handle full turnkey execution.",
   },
   {

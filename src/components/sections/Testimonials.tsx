@@ -12,7 +12,7 @@ const reviews = [
     company: "Apex Global Systems",
     avatar: "/images/testimonials/avatar2.jpg",
     content:
-      "Markslink completely modernized our legacy cloud infrastructure. Their dedicated delivery team worked as an extension of our own, cutting our deployment cycles by over 60%.",
+      "Jawa completely modernized our legacy cloud infrastructure. Their dedicated delivery team worked as an extension of our own, cutting our deployment cycles by over 60%.",
     rating: 5,
     tag: "CLOUD ARCHITECTURE",
     linkedin: true,
@@ -23,7 +23,7 @@ const reviews = [
     company: "FinScale Technologies",
     avatar: "/images/testimonials/avatar1.jpg",
     content:
-      "The engineering precision Markslink brought to our enterprise platform was world-class. They delivered our AI-driven analytics module two weeks ahead of schedule.",
+      "The engineering precision Jawa brought to our enterprise platform was world-class. They delivered our AI-driven analytics module two weeks ahead of schedule.",
     rating: 5,
     tag: "ENTERPRISE SOFTWARE",
     linkedin: false,
@@ -34,7 +34,7 @@ const reviews = [
     company: "OmniData Inc.",
     avatar: "/images/testimonials/avatar3.jpg",
     content:
-      "Partnering with Markslink transformed our operations completely. Their software architecture allowed us to scale seamlessly during peak enterprise loads.",
+      "Partnering with Jawa transformed our operations completely. Their software architecture allowed us to scale seamlessly during peak enterprise loads.",
     rating: 5,
     tag: "SCALABLE SYSTEMS",
     linkedin: false,

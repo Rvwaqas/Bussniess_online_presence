@@ -17,26 +17,38 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Markslink Solutions — Enterprise Software & IT Consulting",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://jawa-it.com"),
+  title: "Jawa Solutions — Enterprise Software & IT Consulting",
   description:
-    "Markslink Solutions architects custom ERPs, AI-driven automation, high-scale cloud platforms, and mobile apps for ambitious enterprises worldwide.",
+    "Jawa Solutions architects custom ERPs, AI-driven automation, high-scale cloud platforms, and mobile apps for ambitious enterprises worldwide.",
   keywords: [
     "Enterprise Software",
     "IT Solutions",
+    "IT Agency Services",
     "Custom ERP",
     "CRM Systems",
     "Cloud Architecture",
     "DevOps",
     "AI Automation",
     "Mobile App Development",
-    "Markslink Solutions",
+    "Jawa Solutions",
+    "Jawa",
   ],
-  authors: [{ name: "Markslink Solutions" }],
+  authors: [{ name: "Jawa Solutions" }],
+  icons: {
+    icon: [
+      { url: "/images/jawa-rounded.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/images/jawa-rounded.png",
+    apple: "/images/jawa-rounded.png",
+  },
   openGraph: {
-    title: "Markslink Solutions — Enterprise Software & IT Consulting",
+    title: "Jawa Solutions — Enterprise Software & IT Consulting",
     description:
       "Engineering Next-Generation Software & Intelligent IT Infrastructure.",
     type: "website",
+    images: ["/images/jawa.jpeg"],
   },
 };
 

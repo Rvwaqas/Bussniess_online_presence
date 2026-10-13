@@ -119,7 +119,7 @@ export default function Hero({ ready = false }: HeroProps) {
           ref={subRef}
           className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--mist)] sm:text-lg"
         >
-          Markslink Solutions architects custom enterprise ERPs, intelligent CRM platforms,
+          Jawa Solutions architects custom enterprise ERPs, intelligent CRM platforms,
           AI automation, and high-performance mobile applications built for global scalability.
         </p>
 

@@ -14,7 +14,7 @@ const allTestimonials = [
     company: "Apex Global Systems",
     avatar: "/images/testimonials/avatar2.jpg",
     content:
-      "Markslink completely modernized our legacy cloud infrastructure. Their dedicated delivery team worked as an extension of our own, cutting our deployment cycles by over 60%. The architectural rigor and automated testing they introduced gave our board complete confidence.",
+      "Jawa completely modernized our legacy cloud infrastructure. Their dedicated delivery team worked as an extension of our own, cutting our deployment cycles by over 60%. The architectural rigor and automated testing they introduced gave our board complete confidence.",
     rating: 5,
     tag: "CLOUD ARCHITECTURE",
     category: "Cloud",
@@ -27,7 +27,7 @@ const allTestimonials = [
     company: "FinScale Technologies",
     avatar: "/images/testimonials/avatar1.jpg",
     content:
-      "The engineering precision Markslink brought to our enterprise platform was world-class. They delivered our core transactional payment engine three weeks ahead of schedule with zero post-launch bugs. Their team is simply top tier.",
+      "The engineering precision Jawa brought to our enterprise platform was world-class. They delivered our core transactional payment engine three weeks ahead of schedule with zero post-launch bugs. Their team is simply top tier.",
     rating: 5,
     tag: "FINTECH & ERP",
     category: "FinTech",
@@ -41,7 +41,7 @@ const allTestimonials = [
     company: "OmniSupply Logistics",
     avatar: "/images/testimonials/avatar3.jpg",
     content:
-      "Markslink re-architected our entire supply chain telemetry stack. Handling over 10 million daily events without breaking a sweat, their cloud-native solution gave us real-time inventory visibility across 40 countries.",
+      "Jawa re-architected our entire supply chain telemetry stack. Handling over 10 million daily events without breaking a sweat, their cloud-native solution gave us real-time inventory visibility across 40 countries.",
     rating: 5,
     tag: "SUPPLY CHAIN IOT",
     category: "Logistics",
@@ -55,7 +55,7 @@ const allTestimonials = [
     company: "MediPulse Health Systems",
     avatar: "/images/testimonials/avatar1.jpg",
     content:
-      "Achieving HIPAA and SOC 2 Type II compliance while deploying a patient portal to 2 million active users seemed impossible on our timeline. Markslink architected an airtight solution that passed our third-party audit with zero exceptions.",
+      "Achieving HIPAA and SOC 2 Type II compliance while deploying a patient portal to 2 million active users seemed impossible on our timeline. Jawa architected an airtight solution that passed our third-party audit with zero exceptions.",
     rating: 5,
     tag: "HEALTHCARE HIPAA",
     category: "Healthcare",
@@ -69,7 +69,7 @@ const allTestimonials = [
     company: "CognitiveFlow AI",
     avatar: "/images/testimonials/avatar2.jpg",
     content:
-      "When building private vector search and LLM automation pipelines, you cannot afford hallucinations or memory leaks. Markslink delivered an enterprise-grade agent framework that handles sensitive customer data with mathematical predictability.",
+      "When building private vector search and LLM automation pipelines, you cannot afford hallucinations or memory leaks. Jawa delivered an enterprise-grade agent framework that handles sensitive customer data with mathematical predictability.",
     rating: 5,
     tag: "AI AUTOMATION",
     category: "AI",
@@ -83,7 +83,7 @@ const allTestimonials = [
     company: "Nordic Retail Collective",
     avatar: "/images/testimonials/avatar3.jpg",
     content:
-      "Our Black Friday flash sales used to crash our old monolith. Markslink replaced the backend with an event-driven headless commerce system that sailed through 45,000 concurrent checkouts without a single second of downtime.",
+      "Our Black Friday flash sales used to crash our old monolith. Jawa replaced the backend with an event-driven headless commerce system that sailed through 45,000 concurrent checkouts without a single second of downtime.",
     rating: 5,
     tag: "HIGH-SCALE ECOMMERCE",
     category: "Retail",
@@ -125,7 +125,7 @@ export default function TestimonialsPage() {
           </h1>
 
           <p className="mt-6 max-w-2xl mx-auto text-base sm:text-lg text-[var(--mist)] leading-relaxed">
-            Read firsthand accounts of how Markslink Solutions architects mission-critical platforms, eliminates technical debt, and accelerates delivery velocity.
+            Read firsthand accounts of how Jawa Solutions architects mission-critical platforms, eliminates technical debt, and accelerates delivery velocity.
           </p>
 
           {/* Aggregate Rating Banner */}
@@ -317,7 +317,7 @@ export default function TestimonialsPage() {
             Experience Engineering Excellence
           </h2>
           <p className="mt-4 text-sm sm:text-base text-[var(--mist)]">
-            Join the CTOs and tech founders who trust Markslink Solutions with their core systems.
+            Join the CTOs and tech founders who trust Jawa Solutions with their core systems.
           </p>
           <div className="mt-8">
             <Link

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import SearchModal from "@/components/SearchModal";
 
@@ -59,37 +60,22 @@ export default function Navigation() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 bg-white/5 transition-colors group-hover:border-[var(--primary)]">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 56 56"
-                fill="none"
-                aria-hidden
-              >
-                <path
-                  d="M10 42L28 14L46 42"
-                  stroke="#8581BD"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M18 30L28 42L38 30"
-                  stroke="#ffffff"
-                  strokeWidth="3.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <circle cx="28" cy="24" r="4" fill="#8581BD" />
-              </svg>
+            <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/20 bg-white shadow-md transition-all duration-300 group-hover:scale-105 group-hover:border-[var(--primary)] group-hover:shadow-[0_0_15px_rgba(133,129,189,0.4)]">
+              <Image
+                src="/images/jawa.jpeg"
+                alt="Jawa Logo"
+                width={40}
+                height={40}
+                className="h-full w-full object-cover"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-display text-lg font-bold tracking-tight text-[var(--foam)]">
-                Markslink
+                Jawa
               </span>
               <span className="text-[9px] uppercase tracking-[0.24em] text-[var(--mist)] -mt-1">
-                Solutions
+                IT Agency Services
               </span>
             </div>
           </Link>
@@ -266,7 +252,7 @@ export default function Navigation() {
                       d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                     />
                   </svg>
-                  Search Markslink...
+                  Search Jawa...
                 </span>
                 <kbd className="rounded border border-white/20 bg-white/5 px-2 py-0.5 text-xs text-[var(--mist)]">
                   ⌘K

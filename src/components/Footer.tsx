@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,16 +8,18 @@ export default function Footer() {
         {/* Company Info */}
         <div className="space-y-4">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 bg-white/5 transition-colors group-hover:border-[var(--primary)]">
-              <svg width="22" height="22" viewBox="0 0 56 56" fill="none" aria-hidden>
-                <path d="M10 42L28 14L46 42" stroke="#8581BD" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M18 30L28 42L38 30" stroke="#ffffff" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="28" cy="24" r="4" fill="#8581BD" />
-              </svg>
+            <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/20 bg-white shadow-md transition-all group-hover:scale-105 group-hover:border-[var(--primary)] group-hover:shadow-[0_0_15px_rgba(133,129,189,0.4)]">
+              <Image
+                src="/images/jawa.jpeg"
+                alt="Jawa Logo"
+                width={40}
+                height={40}
+                className="h-full w-full object-cover"
+              />
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-lg font-bold text-white">Markslink</span>
-              <span className="text-[9px] uppercase tracking-[0.24em] text-[var(--mist)] -mt-1">Solutions</span>
+              <span className="font-display text-lg font-bold text-white">Jawa</span>
+              <span className="text-[9px] uppercase tracking-[0.24em] text-[var(--mist)] -mt-1">IT Agency Services</span>
             </div>
           </Link>
           <p className="text-xs text-[var(--mist)] leading-relaxed">
@@ -87,7 +90,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/about" className="hover:text-white transition-colors">
-                About Markslink
+                About Jawa
               </Link>
             </li>
             <li>
@@ -110,12 +113,16 @@ export default function Footer() {
           </h4>
           <div className="mt-4 space-y-3 text-xs text-[var(--mist)]">
             <p className="leading-relaxed">
-              <strong className="text-[var(--foam)] block">Inquiries:</strong>
-              contact@markslinksolutions.com
+              <strong className="text-[var(--foam)] block">Inquiries & Email:</strong>
+              <a href="mailto:rvwaqas602@gmail.com" className="hover:text-[var(--primary)] transition-colors">
+                rvwaqas602@gmail.com
+              </a>
             </p>
             <p className="leading-relaxed">
-              <strong className="text-[var(--foam)] block">Engineering Hubs:</strong>
-              Global Remote-First · 24/7 Follow-the-Sun Delivery
+              <strong className="text-[var(--foam)] block">Direct Phone & WhatsApp:</strong>
+              <a href="tel:+923480227414" className="hover:text-[var(--primary)] transition-colors">
+                +92 348 0227414
+              </a>
             </p>
             <p className="leading-relaxed">
               <strong className="text-[var(--foam)] block">Enterprise SLA:</strong>
@@ -126,7 +133,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between text-xs text-[var(--mist)]">
-        <p>© {new Date().getFullYear()} Markslink Solutions. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Jawa Solutions. All rights reserved.</p>
         <div className="flex flex-wrap gap-6">
           <Link href="/about" className="hover:text-white transition-colors">Company Overview</Link>
           <Link href="/contact" className="hover:text-white transition-colors">Privacy & NDA</Link>
